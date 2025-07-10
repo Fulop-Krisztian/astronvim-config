@@ -4,7 +4,7 @@
 
 A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
-## Quickstart
+## ⏱️ Quickstart
 ```
 rm -rf ~/.config/nvim
 rm -rf ~/.local/state/nvim
