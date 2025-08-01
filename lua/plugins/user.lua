@@ -1,5 +1,51 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- I want to keep the example below
+---@type LazySpec
+if true then
+  return {
+    {
+      "folke/snacks.nvim",
+      opts = {
+        dashboard = {
+          preset = {
+            header = table.concat({
+              -- I finally feel like I've achieved something great.
+              [[
+ _     _   _                   ____                 _ _    _                _ _                            __        _ _    _     _______         _ _  __               
+| |   | | | |            _    / / /                (_) |  (_)              | (_)                          / /       (_) |  (_)   / /_   _|       | | |/ _|              
+| |__ | |_| |_ _ __  ___(_)  / / /__ _ __ __      ___| | ___ _ __   ___  __| |_  __ _   ___  _ __ __ _   / /_      ___| | ___   / /  | |_ __ ___ | | | |_ __ _  ___ ___ 
+| '_ \| __| __| '_ \/ __|   / / / _ \ '_ \\ \ /\ / / | |/ / | '_ \ / _ \/ _` | |/ _` | / _ \| '__/ _` | / /\ \ /\ / / | |/ / | / /   | | '__/ _ \| | |  _/ _` |/ __/ _ \
+| | | | |_| |_| |_) \__ \_ / / /  __/ | | |\ V  V /| |   <| | |_) |  __/ (_| | | (_| || (_) | | | (_| |/ /  \ V  V /| |   <| |/ /    | | | | (_) | | | || (_| | (_|  __/
+|_| |_|\__|\__| .__/|___(_)_/_/ \___|_| |_(_)_/\_/ |_|_|\_\_| .__/ \___|\__,_|_|\__,_(_)___/|_|  \__, /_/    \_/\_/ |_|_|\_\_/_/     \_/_|  \___/|_|_|_| \__,_|\___\___|
+              | |                                           | |                                   __/ |                                                                 
+              |_|                                           |_|                                  |___/                                                                  
 
+             ]],
+            }, "\n"),
+          },
+          sections = {
+            -- I don't want to use the header right now
+            -- { section = "header" },
+            {
+              pane = 2,
+              section = "terminal",
+              cmd = "cbonsai --live --base=2 --time=0,01 --life=30 --message=(shuf -n 1 ~/.config/nvim/assets/ddquotes.txt)",
+              -- I tested it a bit and it seems like it doesn't affect startup time
+              -- I kept this here if you want to turn off quotes
+              -- cmd = "cbonsai --live --base=2 --time=0,01 --life=30 ",
+              height = 25,
+              padding = 1,
+            },
+            { section = "keys", gap = 1, padding = 1 },
+            { icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
+            { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
+            { section = "startup" },
+          },
+        },
+      },
+    },
+  }
+end
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- PLEASE REMOVE THE EXAMPLES YOU HAVE NO INTEREST IN BEFORE ENABLING THIS FILE
 -- Here are some examples:

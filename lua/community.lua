@@ -15,5 +15,8 @@ return {
   { import = "astrocommunity.pack.cpp" },
   -- AI code completion
   -- This meddles with the default keybindings, mainly <TAB>
+  -- this is so that you can use the AI completion
   { import = "astrocommunity.recipes.ai" },
+  -- { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
 }

@@ -1,3 +1,5 @@
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+
 -- Inlay hints are the thingies that tell you what type something is in rust.
 -- They exist in other languages too.
 
