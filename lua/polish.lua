@@ -6,3 +6,9 @@ vim.opt.wrap = true
 -- This will run last in the setup process.
 -- This is just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here
+
+-- Enable KDE clipboard integration
+-- https://nramkumar.org/tech/blog/2025/05/11/neovim-copying-to-the-system-clipboard-in-kde/
+-- (you need the wl-clipboard package installed as well on wayland)
+-- yay -S wl-clipboard
+vim.api.nvim_set_option_value("clipboard", "unnamedplus", {})
