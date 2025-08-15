@@ -29,7 +29,7 @@ if true then
             {
               pane = 2,
               section = "terminal",
-              cmd = "cbonsai --live --base=2 --time=0,01 --life=30 --message=(shuf -n 1 ~/.config/nvim/assets/ddquotes.txt)",
+              cmd = "cbonsai --live --base=2 --time=0,01 --life=30 --message=(shuf -n 1 ~/.config/nvim/assets/ddquotes75long.txt)",
               -- I tested it a bit and it seems like it doesn't affect startup time
               -- I kept this here if you want to turn off quotes
               -- cmd = "cbonsai --live --base=2 --time=0,01 --life=30 ",
