@@ -3,6 +3,7 @@
 -- TODO: This is where you configure tabs vs spaces. Configure for tabs.
 -- vim.opt.autochdir = true
 vim.opt.wrap = true
+vim.cmd "nmap <F1> <nop>"
 -- This will run last in the setup process.
 -- This is just pure lua so anything that doesn't
 -- fit in the normal config locations above can go here

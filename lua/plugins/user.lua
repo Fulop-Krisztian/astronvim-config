@@ -29,6 +29,7 @@ if true then
             {
               pane = 2,
               section = "terminal",
+              -- It seems that cbonsai has a limit of around 75 characters, so I created a file with quotes that are 75 characters long maximum.
               cmd = "cbonsai --live --base=2 --time=0,01 --life=30 --message=(shuf -n 1 ~/.config/nvim/assets/ddquotes75long.txt)",
               -- I tested it a bit and it seems like it doesn't affect startup time
               -- I kept this here if you want to turn off quotes

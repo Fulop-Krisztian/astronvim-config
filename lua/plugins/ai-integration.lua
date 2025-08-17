@@ -1,3 +1,4 @@
+-- If you ever need to toggle ai on or off, just give the SupermavenToggle command
 return {
   {
     "AstroNvim/astrocore",
