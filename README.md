@@ -9,7 +9,7 @@ A template for getting started with [AstroNvim](https://github.com/AstroNvim/Ast
 rm -rf ~/.config/nvim
 rm -rf ~/.local/state/nvim
 rm -rf ~/.local/share/nvim
-git clone https://github.com/Fulop-Krisztian/astronvim-config ~/.config/nvim
+git clone --depth 1 https://github.com/Fulop-Krisztian/astronvim-config ~/.config/nvim
 nvim ~/.config/nvim
 ```
 
